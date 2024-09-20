@@ -1,0 +1,57 @@
+{%block content%}
+{% load static %}
+            
+            <link rel="stylesheet" href="{% static 'portfolio.css' %}">
+            <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    body{
+        <header class="header">
+            <a href="#" class="logo">Dinesh's Portfolio</a>
+            <nav class="navbar">
+                <a href="{% url 'home' %}" class="active">Portfolio</a>
+                <a href="{% url 'education' %}">Education</a>
+                <a href="{% url 'services' %}">Service</a>
+                <a href="{% url 'projects' %}">Projects</a>
+            </nav>
+            <a href="{% url 'contactform' %}" class="contactb">Contact Me</a>
+        </header>
+
+        <section class="contactform" id="contactform">
+            
+            <h2 class="contactform">Contact<span>Me</span></h2>
+            <form action="{% url 'contact' %}" method="POST">
+            {%csrf_token%}
+                <div class="input-box">
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="email" placeholder="Email ID" name="email">
+                </div>
+
+                <div class="input-box"> 
+                    <input type="text" placeholder="Contact Number" name="contactno">
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+                <div class="input-box">
+                <input type="text" placeholder="Message" name="message"></textarea>
+                <input type="submit" name="submit"  value="Send Message"
+                class="btn">
+                </div>
+            </form>
+             <footer class="footer">
+            <ul class="list">
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contact Me</a>
+                </li>
+            </ul>
+        </footer>
+        </section>
+
+      
+    }
+    
+{%endblock%}

@@ -1,0 +1,35 @@
+{%block content%}
+{% load static %}
+    
+            <link rel="stylesheet" href="{% static 'portfolio.css' %}">
+            <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    body{
+        <header class="header">
+            <a href="#" class="logo">Dinesh's Portfolio</a>
+            <nav class="navbar">
+                <a href="{% url 'home' %}" class="active">Portfolio</a>
+                <a href="{% url 'education' %}">Education</a>
+                <a href="{% url 'services' %}">Service</a>
+                <a href="{% url 'projects' %}">Projects</a>
+            </nav>
+            <a href="{% url 'contactform' %}" class="contactb">Contact Me</a>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+            <h3>DINESH, Bsc.AMM, MIB</h3>
+            <h1>I'am<br> a Full Stack Developer &<span>  AI Developer</span></h1>
+            <p>Full-stack developers design and create websites and applications for various platforms. 
+               Develop and maintain web services and interfaces. Contribute to front-end and back-end development processes. 
+               Build new product features or APIs.</p>
+            <p>AI developers are those who design, develop, and deploy AI-powered solutions. 
+                They are shaping the technological future by creating intelligent systems and applications.</p>
+                
+            </div>
+            <div class="img-box">
+                <img src="{% static 'AI.jpg' %}">
+            </div>
+        </section>
+  }
+
+{%endblock%}

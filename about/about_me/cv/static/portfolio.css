@@ -1,0 +1,263 @@
+
+body{
+    .header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 35px 12px;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    }
+}
+.logo{
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 600;
+    transition: 0.3 ease;
+    font-style: italic;
+}
+.logo:hover{
+    color:red;
+    text-shadow: 0 0 25px red, 0 0 50px red;
+    transform: scale(1.1);
+}
+span{
+    color:red;
+}
+.navbar a{
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    font-style: italic;
+}
+.navbar a:hover, .navbar a.active{
+    color:red;
+    border-bottom: 3px solid red;
+}
+.contactb{
+    padding: 10px 28px;
+    background-color: red;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contactb.hover{
+    background-color: red;
+    box-shadow: 0 0 50px red;
+    color: black;
+}
+.home{
+    width:100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+    color:red;
+    font-style: italic;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+    font-style: italic;
+}
+.btn-box{
+    width:345px;
+    display:flex;
+    gap:2rem;
+}
+.btn{
+    padding: 15px 28px;
+    background-color: black;
+    color:aliceblue;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: red;
+    color: aliceblue;
+    border: 2px solid black;
+}
+.img-box img{
+    border-radius: 50%;
+    width:550px;
+}
+
+.services{
+    width: 100% ;
+    background-color: aliceblue;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+}
+.services-content{
+    align-items: center;
+    width: 100%;
+}
+.services-content h1{
+    color:red;
+    text-align: center;
+    font-size: 75px;
+}
+.services-content h3{
+    color:brown;
+    text-align: center;
+    font-size: 50px;
+}
+.services-content h4{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+.projects{
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    min-height: 100vh;
+}
+.projects-content{
+    align-items: center;
+    width: 100%;
+}
+.projects-content h1{
+    text-align: center;
+    color: red;
+    font-size: 75px;
+}
+.projects-content h2{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+}
+.projects-content p{
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-style: italic;
+}
+.education{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+.education-content{
+    align-items: center;
+    width: 100%;
+}
+.education-content p{
+    text-align: center;
+    font-size: 75px;
+    color: red;
+    font-style: bold;
+}
+.education-content h1{
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    font-style: italic;
+}
+.education-content h2{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-style: italic;
+}
+.education-content h3{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+.education-content h4{
+    text-align: right;
+    font-size: 25px;
+    color: black;
+    width: 100%;
+}
+.contactform h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 75px;
+}
+
+.contactform form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contactform form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contactform form .input-box input{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 18px;
+    color: black;
+    background-color: aliceblue;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.footer{
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: aliceblue;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid red;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}

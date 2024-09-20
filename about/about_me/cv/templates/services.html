@@ -1,0 +1,36 @@
+{%block content%}
+{% load static %}
+    
+        
+            <link rel="stylesheet" href="{% static 'portfolio.css' %}">
+            <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    body{
+        <header class="header">
+            <a href="#" class="logo">Dinesh's Portfolio</a>
+            <nav class="navbar">
+                <a href="{% url 'home' %}" class="active">Portfolio</a>
+                <a href="{% url 'education' %}">Education</a>
+                <a href="{% url 'services' %}">Service</a>
+                <a href="{% url 'projects' %}">Projects</a>
+            </nav>
+            <a href="{% url 'contactform' %}" class="contactb">Contact Me</a>
+        </header>
+
+         <section class="services" id="services">
+            <div class="services-content">
+                <h1><br>SERVICE</h1>
+                <h3>Professional Knowledge & Skills In</h3>
+                <h4>Python</h4>
+                <h4>Front-end Developer</h4>
+                <h4>Back-end Developer</h4>
+                <h4>Django</h4>
+                <h4>Machine language</h4>
+                <h4>AI Developer</h4>
+                <h4>Business Management</h4>
+                <h4>Merchandising</h4>
+            </div>
+        </section>
+    
+
+{%endblock%}

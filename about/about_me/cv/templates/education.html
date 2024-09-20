@@ -1,0 +1,31 @@
+{%block content%}
+{% load static %}
+    
+        
+            <link rel="stylesheet" href="{% static 'portfolio.css' %}">
+            <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    body{
+        <header class="header">
+            <a href="#" class="logo">Dinesh's Portfolio</a>
+            <nav class="navbar">
+                <a href="{% url 'home' %}" class="active">Portfolio</a>
+                <a href="{% url 'education' %}">Education</a>
+                <a href="{% url 'services' %}">Service</a>
+                <a href="{% url 'projects' %}">Projects</a>
+            </nav>
+            <a href="{% url 'contactform' %}" class="contactb">Contact Me</a>
+        </header>
+
+         <section class="education" id="education">
+            <div class="education-content">
+                <p><br>EDUCATION</p>
+                <h1>Master Of International Business</h1>
+                <h2>Secured 74%<br>GRD College of Arts & Science<br>Passed out in 2022</h2>
+                <h1>Bsc.Apparel Manufacturing & Merchandising</h1>
+                <h2>Secured 73%<br>NIFT-TEA College of Knitwear & Fashion<br>Passed out in 2020</h2>
+            </div>
+        </section>
+    
+
+{%endblock%}
